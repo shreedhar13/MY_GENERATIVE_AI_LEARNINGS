@@ -1,0 +1,9 @@
+Summary
+
+Hugging Face: is a comprehensive "platform" focused on providing tools, models, and datasets for NLP and other AI tasks. It is ideal for researchers and developers looking to access and fine-tune pre-trained models.
+HuggingFace_hub contains all pretrained LLM models....some of them are paid to use and many of them are free to use.....
+there are 2 ways to use them/embeed them in your application 
+	1)Download the model in to ur local machine..(which require more resources like RAM,ROM,CPU,GPU..etc for storing and processing for further use,,,, 
+	2)Use API to pass and receive the query/prompt , response respectively
+
+LangChain: is a "framework" designed to help build applications that use language models in more sophisticated ways, particularly focusing on chaining, memory, and integration with other systems. It is suitable for developers looking to create complex applications that leverage the capabilities of language models.

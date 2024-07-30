@@ -1,0 +1,4 @@
+> conda create --name playing_with_genai python=3.11
+> conda env list
+> conda activate playing_with_genai
+> pip install requirement.txt

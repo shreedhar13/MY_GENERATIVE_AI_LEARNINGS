@@ -1,0 +1,23 @@
+openai
+langchain
+jupyter notebook
+google-search-results
+wikipedia
+pypdf
+huggingface_hub
+transformers
+accelerate
+bitsandbytes
+scipy
+torch
+threadpoolctl
+tensorflow
+pinecone-client
+tiktoken
+gensim
+numpy
+chromadb
+pandas
+PIL
+image
+pillow
