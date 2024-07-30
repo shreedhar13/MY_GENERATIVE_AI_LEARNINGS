@@ -1,0 +1,70 @@
+1)Question: What is Word2Vec?
+
+Answer: Word2Vec is a pretrained embedding model from Google that represents words as vectors, commonly with dimensions like 100, 200, or 300.
+but,, The original Google News Word2Vec model, for example, produces 300-dimensional vectors.
+download this googles word_2_vec model - https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g
+openai embedding model-> u cant download it,,,just pay and use it,,,it is way better than w2v,,,,bcz it can handle out_of_vocab words very easilt bcz of BPE technique
+2)Question: How does Word2Vec handle a sentence with 4 words?
+
+Answer: Each word is converted into its corresponding vector, and these vectors can be averaged to represent the sentence as a single vector.
+Example: For the sentence "The cat sits here":
+Word vectors:
+"The" = [0.2, 0.1, 0.3, 0.4, 0.5, ...]
+"cat" = [0.6, 0.2, 0.8, 0.7, 0.1, ...]
+"sits" = [0.3, 0.7, 0.4, 0.1, 0.8, ...]
+"here" = [0.5, 0.4, 0.2, 0.3, 0.6, ...]
+Sum of vectors: [1.6, 1.4, 1.7, 1.5, 2.0, ...]
+Average vector: [0.4, 0.35, 0.425, 0.375, 0.5, ...]
+Resultant Vector: The average vector is the resultant vector for the sentence.
+
+
+3)Question: How to break down a sentence into words for an NLP model?
+
+Answer: Tokenize the sentence using libraries like NLTK, spaCy, or Python’s split method.
+
+
+
+4)Question: Does OpenAI use the same process for embeddings, and what about 1600-dimensional vectors?
+
+Answer: Yes, OpenAI embeddings use a similar process but produce 1600-dimensional vectors. OpenAI’s API can be used to obtain these embeddings for a sentence.
+
+
+
+5)Question: What is Byte Pair Encoding (BPE)?
+
+Answer: BPE is a subword tokenization algorithm that iteratively merges the most frequent pairs of characters or subwords to handle out-of-vocabulary words and improve efficiency.
+Example Process:
+Initial text: "low low lower"
+Initial pairs: ('lo', 'ow')
+Merge lo -> lo w lo w lower
+Merge ow -> lo ow lo ow lower
+Merge low -> low low lower
+Final vocabulary includes subwords like lo, ow, low.
+
+
+
+6)Question: Does OpenAI use BPE for tokenization?
+
+Answer: Yes, OpenAI uses BPE for tokenization to handle subwords efficiently.
+Example using OpenAI's API:
+python
+Copy code
+import openai
+
+# Set your API key
+openai.api_key = 'your-api-key'
+
+# Define the sentence
+sentence = "The cat sits here."
+
+# Get embeddings
+response = openai.Embedding.create(
+  input=sentence,
+  model="text-embedding-ada-002"  # Use the appropriate model name
+)
+
+# Extract the embedding
+embedding = response['data'][0]['embedding']
+print(f"Embedding vector (first 5 dimensions): {embedding[:5]}")
+print(f"Embedding vector length: {len(embedding)}")
+Result: The API returns a single 1600-dimensional vector representing the entire sentence.

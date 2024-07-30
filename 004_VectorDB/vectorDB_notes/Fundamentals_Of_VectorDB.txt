@@ -1,0 +1,9 @@
+1) What is Vector DB?
+-> used for storing high dimensionsal vectors such as word embeddings(For text data) , image embeddings(for image data) ,(voice also converted to text thus it is also represnted with text embeddings) , (Video is a serial combination of frame/image itself,,,so here also used image embeddings)
+-> 2 ,,, it is scalar value,,,bcz it has magnitude(strength or value or weight) and it doesnt have any direction,,,,,,,,,,,bcz whene you place this point on  1d graph then all points are look like same
+->[0,3],,,2 dimensional vector,,,,it has magnitude and direction,,,,,,if u place it on 2d graph,,,and place it [1,4] vector,,then you clearly see both are facing in different direction.....(Visualize bro,,by drawing line from origin),,,,,,in 3d space you can see it clearly,,that both these vector moving in diff-diff direction
+->Embeddings (vector representation of raw data(text,image),,,and that vector has semantic meaning of data or sequence data)
+-> Word Embeddings : representing each word in to vector form such that ,this vector retains the semantic meaning of word..and after that combining each word together to form sentece/sequence
+_> see notes(generattive ai book)....for further info
+
+2)
