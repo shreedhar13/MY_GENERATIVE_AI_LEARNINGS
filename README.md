@@ -67,6 +67,10 @@ Insights and projects involving the Llama Index, showcasing its use in various d
 - 006_Llama_Index/:
            - Contains notebooks and scripts exploring the Llama Index, including practical applications and custom implementations.
 
+# Important Things In Gen AI
+- Important things to work with gen ai models(guide to paid and unpaid models)
+- what tokens? and how **pricing of tokens** works is discussed here
+
 ## Dependencies
 - check out **000_requirements**
 
